@@ -80,7 +80,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with: token:${{secrets.TOKEN}}
+        with: ${{secrets.TOKEN}}
 
       - name: Update tag in kubernetes deployment manifest
         run: |
